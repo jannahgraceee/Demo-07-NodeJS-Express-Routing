@@ -2,23 +2,23 @@ const express = require('express');
 const router = express.Router();
 
 // Payments
-app.get('/', (request, response) => {
+router.get('/', (request, response) => {
     response.status(200).json({ message: 'GET all payments' });
 });
 
-app.post('/', (request, response) => {
+router.post('/', (request, response) => {
     response.status(200).json({ message: `CREATE new payments` });
 });
 
-app.get('/:id', (request, response) => {
+router.get('/:id', (request, response) => {
     response.status(200).json({ message: `GET payments with id ${request.params.id}` });
 });
 
-app.put('/:id', (request, response) => {
+router.put('/:id', (request, response) => {
     response.status(200).json({ message: `UPDATE payments with id ${request.params.id}` });
 });
 
-app.delete('/:id', (request, response) => {
+router.delete('/:id', (request, response) => {
     response.status(200).json({ message: `DELETE payments with id ${request.params.id}` });
 });
 
