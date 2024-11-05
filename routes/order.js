@@ -18,7 +18,7 @@ router.put('/:id', (request, response) => {
     response.status(200).json({ message: `UPDATE order with id ${request.params.id}` });
 });
 
-routers.delete('/:id', (request, response) => {
+router.delete('/:id', (request, response) => {
     response.status(200).json({ message: `DELETE order with id ${request.params.id}` });
 });
 
