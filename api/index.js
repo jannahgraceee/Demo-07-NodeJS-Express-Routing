@@ -11,7 +11,7 @@ app.listen(PORT, () => {
 
 //Home Page
 app.get('/', (request, response) => {
-  response.send({ message: 'Welcome to the API: Jannah Claravall' });
+    response.send('<h1>Welcome to the API: Jannah Claravall</h1>');
 });
 
 //Customers
